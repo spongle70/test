@@ -10,6 +10,7 @@ jobs:
       - name: 'Build:dockerimage'
         uses: docker/build-push-action@v1
     with:
-        build-args: IMG_VERSION=3.12.0
-        build-args: NAS_USER=dnke
+        build-args: |
+        IMG_VERSION=3.12.0
+        NAS_USER=dnke
         
