@@ -1,6 +1,6 @@
 # 
 #
-ARG IMG_VERSION alpine:3.12.0
+ARG IMG_VERSION=alpine:3.12.0
 FROM ${IMG_VERSION}
 #
 #
@@ -10,7 +10,7 @@ ARG VCS_REF
 ARG VCS_URL
 ARG VERSION
 
-ARG NAS_USER qwe
+ARG NAS_USER=qwe
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="zzbase" \
