@@ -18,6 +18,8 @@ jobs:
           build-args: |
             IMG_VERSION=alpine:3.12.0
             NAS_USER=dnke
+          context: .
+          psuh: true
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
