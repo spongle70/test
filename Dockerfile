@@ -1,6 +1,6 @@
 # 
 #
-ARG IMG_VERSION=alpine:3.12.0
+ARG IMG_VERSION
 FROM ${IMG_VERSION}
 #
 #
