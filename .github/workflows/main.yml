@@ -22,7 +22,11 @@ jobs:
           registry: ghcr.io
           username: spongle70
           password: ${{ secrets.GITHUB_TOKEN }}
-  
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
       - name: "Build: build and push dockerimage"
         uses: docker/build-push-action@v3
         with:
@@ -35,4 +39,5 @@ jobs:
           #username: spongle70
           #password: ${{ secrets.GITHUB_TOKEN }}
           #repository: ${{ github.actor }}/${{ env.IMAGE_NAME }}
-          tags: latest        
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
