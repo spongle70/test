@@ -12,5 +12,5 @@ NAS_USER=donkey
 NAS_GROUP=donkey
 NAS_UID='1003'
 NAS_GID='1003'
-
+  
 docker build --build-arg IMG_VERSION=${OS}:${VERSION} --build-arg NAS_USER=${NAS_USER} -t aaaa .
