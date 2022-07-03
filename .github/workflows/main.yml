@@ -10,7 +10,7 @@ jobs:
       - name: 'Build:dockerimage'
         uses: docker/build-push-action@v1
         with:
-          build-args: |
+          build_args: |
             "IMG_VERSION=alpine:3.12.0"
             "NAS_USER=dnke"
         
