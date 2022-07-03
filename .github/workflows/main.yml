@@ -13,4 +13,8 @@ jobs:
 #          build_args: |
 #            "IMG_VERSION=alpine:3.12.0"
 #            "NAS_USER=dnke"
-        
+#          registry: ghcr.io
+#          username: "rguichard"
+#          password: ${{ secrets.PAT }}
+#          repository: rguichard/helloworld
+#          tags: latest        
