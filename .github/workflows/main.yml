@@ -2,7 +2,7 @@ name: zzbase images
 
 on:
   release:
-    types: [created][push]
+    types: [created,push]
 
 jobs:
   build:
