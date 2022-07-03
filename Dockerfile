@@ -10,7 +10,7 @@ ARG VCS_REF
 ARG VCS_URL
 ARG VERSION
 
-ARG NAS_USER=qwe
+ARG NAS_USER
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="zzbase" \
