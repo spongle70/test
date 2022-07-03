@@ -67,9 +67,10 @@ RUN set -ex && \
 
 # clean any packages
 RUN set -ex && rm -rf /tmp/* /var/cache/apk/*  /var/lib/apt/lists/* /var/tmp/*
+
 #
 #
-# Install dependencies
+# Install base dependencies
 #RUN set -ex && \
 #    apk --no-cache --update add \
 #        git
