@@ -31,8 +31,8 @@ jobs:
             NAS_USER=dnke
           context: .
           push: true
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          repository: ${{ github.actor }}/${{ env.IMAGE_NAME }}
+          #registry: ${{ env.REGISTRY }}
+          #username: ${{ github.actor }}
+          #password: ${{ secrets.GITHUB_TOKEN }}
+          #repository: ${{ github.actor }}/${{ env.IMAGE_NAME }}
           tags: latest        
